@@ -1,8 +1,7 @@
 .section__title {
     text-align: center;
-}
-
-.section__title::after {
+    
+    &::after {
     content: '';
     background-color: rgb(243, 129, 129);
     width: 60px;
@@ -10,17 +9,16 @@
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-}
-
-.section__title-name {
+    }
+    
+    &-name {
     font-family: $second-font;
     font-size: 30px;
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.section__title-name_br {
+    
+    &_br {
     display: block;
     font-family: $last-font;
     font-size: 24px;
@@ -28,6 +26,10 @@
     text-transform: none;
     font-weight: normal;
     margin-bottom: 10px;
+    }
+    }
+    
+    
 }
 
 .section_indent-title {
@@ -39,60 +41,54 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.services__list-item {
+    
+    &-item {
     width: 380px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     padding-left: 80px;
-}
-
-.services__list-item_icon-clock,
-.services__list-item_icon-graphics,
-.services__list-item_icon-coputer,
-.services__list-item_icon-book,
-.services__list-item_icon-home,
-.services__list-item_icon-image {
-    background-repeat: no-repeat;
-    background-position: 20px 0;
-}
-
-.services__list-item_icon-clock {
-    background-image: url(../images/servise_bg/bg_clock.png);
-}
-
-.services__list-item_icon-graphics {
-    background-image: url(../images/servise_bg/bg_line_graph.png);
-}
-
-.services__list-item_icon-coputer {
-    background-image: url(../images/servise_bg/bg_computer.png);
-}
-
-.services__list-item_icon-book {
-    background-image: url(../images/servise_bg/bg_book.png);
-}
-
-.services__list-item_icon-home {
-    background-image: url(../images/servise_bg/bg_home.png);
-}
-
-.services__list-item_icon-image {
-    background-image: url(../images/servise_bg/bg_image.png);
-}
-
-.services__list-title {
+    
+        &_icon-clock, &_icon-graphics, &_icon-computer, &_icon-book, &_icon-home, &_icon-image {
+        background-repeat: no-repeat;
+        background-position: 20px 0;}
+        
+        &_icon-clock {
+        background-image: url(../images/servise_bg/bg_clock.png);
+        }
+        
+        &_icon-graphics {
+        background-image: url(../images/servise_bg/bg_line_graph.png);
+        }
+        
+        &_icon-computer {
+        background-image: url(../images/servise_bg/bg_computer.png);
+        }
+        
+        &_icon-book {
+        background-image: url(../images/servise_bg/bg_book.png);
+        }
+        
+        &_icon-home {
+        background-image: url(../images/servise_bg/bg_home.png);  
+        }
+        
+        &_icon-image {
+        background-image: url(../images/servise_bg/bg_image.png);
+        }
+    }
+    
+    &-title {
     font-family: $second-font;
     text-transform: uppercase;
     font-size: 14px;
     color: rgb(51, 51, 51);
     margin-bottom: 15px;
-}
-
-.services__list-description {
+    }
+    
+    &-description {
     font-size: 15px;
     color: rgb(153, 153, 153);
     line-height: 24px;
+    }
 }

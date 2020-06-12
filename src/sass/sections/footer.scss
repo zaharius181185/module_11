@@ -1,20 +1,20 @@
 .container-footer {
     display: flex;
     justify-content: space-between;
+    
+    &_indent {
+    margin-bottom: 10px;
+    }
 }
 
 .footer-description {
     font-size: 14px;
     display: flex;
     align-items: center;
-}
-
-.footer-description-link {
+    
+    &-link {
     color: rgb(243, 129, 129);
-}
-
-.container-footer_indent {
-    margin-bottom: 10px;
+    }
 }
 
 .email-form__input {
@@ -25,19 +25,19 @@
     padding-left: 12px;
     border: 1px solid rgb(217, 217, 217);
     outline: 0;
-}
-
-.email-form__input::placeholder {
+    
+    &::placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.6;
     font-style: italic;
     color: rgb(217, 217, 217);
     font-weight: 300;
+    }
 }
 
 .email-form__btn {
-    font-family: $second-font;
+    // font-family: $second-font;
     text-transform: uppercase;
     height: 40px;
     width: 150px;
